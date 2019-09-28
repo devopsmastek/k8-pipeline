@@ -3,7 +3,7 @@ node
 { 
       
 stage ('branch') {
-  def branch =${env.GIT_BRANCH}
+  def branch = env.GIT_BRANCH
   sh "echo '$branch'"
 }
 
