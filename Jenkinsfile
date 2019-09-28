@@ -14,7 +14,7 @@ stage('scm checkout') {
    }
       if ( $master == ${env.BRANCH_NAME} ) {
             stage('deploy to production') {
-             sh 'cp README.md /app/README.md
+             sh 'cp README.md /app/README.md'
             }
       
       }
