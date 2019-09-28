@@ -1,10 +1,15 @@
 
 node 
 { 
+      
+stage ('branch') {
+  echo "${env.GIT_BRANCH}"
+}
+
 stage('scm checkout') { 
-      def branch = env.BRANCH_NAME
-      sh 'git clone -b $branch https://github.com/devopsmastek/k8-pipeline.git'
-      sh 'ls'         
+      
+       git 'https://github.com/devopsmastek/k8-pipeline.git'
+       sh 'ls'         
    }
  }
 
