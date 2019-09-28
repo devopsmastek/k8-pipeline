@@ -1,5 +1,4 @@
-pipeline
-{
+
 node 
 { 
 stage('scm checkout') { 
@@ -8,4 +7,4 @@ stage('scm checkout') {
       sh 'ls'         
    }
  }
-}
+
