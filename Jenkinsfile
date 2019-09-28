@@ -3,7 +3,8 @@ node
 { 
       
 stage ('branch') {
-  sh "echo '${env.GIT_BRANCH}'"
+  def branch =${env.GIT_BRANCH}
+  sh "echo '$branch'"
 }
 
 stage('scm checkout') { 
